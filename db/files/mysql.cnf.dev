@@ -1,0 +1,47 @@
+# Template my.cnf for PXC
+# Edit to your requirements.
+
+[mysqld]
+
+
+ft_min_word_len                 =2
+ft_stopword_file                =''
+innodb_ft_min_token_size        =2
+#binlog_format                  = ROW
+key-buffer-size                = 32M
+#myisam-recover                 = FORCE,BACKUP
+max-allowed-packet             = 16M
+max-connect-errors             = 1000000
+skip-name-resolve
+#log-bin                        = /var/lib/mysql/mysql-bin
+#expire-logs-days               = 14
+#sync-binlog                    = 1
+tmp-table-size                 = 32M
+max-heap-table-size            = 32M
+query-cache-type               = 1
+query-cache-size               = 32M
+query_cache_limit              = 16M
+max-connections                = 500
+thread-cache-size              = 500
+open-files-limit               = 65535
+table-definition-cache         = 4096
+table-open-cache               = 512
+innodb-flush-method            = O_DIRECT
+innodb-log-files-in-group      = 2
+innodb-flush-log-at-trx-commit = 1
+innodb-file-per-table          = 1
+innodb-buffer-pool-size        = 2G
+tmp_table_size          = 16M
+max_heap_table_size     = 16M
+join_buffer_size        = 1M
+datadir                        = /var/lib/mysql
+bind-address                   = 0.0.0.0
+
+innodb_locks_unsafe_for_binlog = 1
+innodb_autoinc_lock_mode       = 2
+
+
+
+[mysqld_safe]
+pid-file = /run/mysqld/mysql.pid
+syslog
