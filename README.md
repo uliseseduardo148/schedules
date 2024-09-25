@@ -40,7 +40,7 @@ php artisan migrate
 php artisan db:seed
 ```
 Con esto se tendría el proyecto funcionando, ingresar a la URL
-- [url](localhost:8088/schedules)
+- localhost:8088/schedules
 
 ## Autores ✒️
 * **Ulises Eduardo López Hernández**
