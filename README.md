@@ -11,6 +11,7 @@ Clonar el repositorio con git clone.
 ```
 git clone https://github.com/uliseseduardo148/schedules.git
 ```
+Crear las carpetas data y provision dentro de la carpeta db, que deben de estar vacías y todos los permisos de lectura y escritura
 
 ### Instalación 🔧
 
