@@ -51,7 +51,6 @@
             });
 
             $('.show-availability').on('click', function() {
-
                 Swal.fire({
                     title: 'Seleccione un rango de tiempo',
                     html: `

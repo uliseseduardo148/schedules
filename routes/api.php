@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/employee-availability', [ScheduleController::class, 'show'])->name('schedule.employee-availability');
+Route::post('/create-appointment', [ScheduleController::class, 'store'])->name('schedule.create-appointment');

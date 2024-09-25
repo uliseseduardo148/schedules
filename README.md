@@ -33,8 +33,8 @@ DB_PASSWORD=schedule
 Enseguida entrar al docker y ejecutar
 ```
 docker exec -it schedule-api bash
-php artisan key:generate
 composer install
+php artisan key:generate
 php artisan migrate
 php artisan db:seed
 ```
